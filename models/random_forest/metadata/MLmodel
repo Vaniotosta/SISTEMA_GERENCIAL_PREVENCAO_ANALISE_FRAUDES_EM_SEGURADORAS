@@ -1,0 +1,51 @@
+artifact_path: dbfs:/databricks/mlflow-tracking/4429628036624567/logged_models/m-30a51d463b844a2da54752c1a6221c4a/artifacts
+databricks_runtime: client.6
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-30a51d463b844a2da54752c1a6221c4a
+model_size_bytes: 25470212
+model_uuid: m-30a51d463b844a2da54752c1a6221c4a
+prompts: null
+run_id: 35deeb8379624e939021321d7cf76240
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "idade", "required": true}, {"type": "double",
+    "name": "tempo_cliente_anos", "required": true}, {"type": "double", "name": "score_credito",
+    "required": false}, {"type": "string", "name": "estado_civil", "required": true},
+    {"type": "double", "name": "renda_mensal", "required": false}, {"type": "string",
+    "name": "tipo_cobertura", "required": true}, {"type": "double", "name": "valor_segurado",
+    "required": true}, {"type": "double", "name": "franquia", "required": true}, {"type":
+    "double", "name": "premio_anual", "required": true}, {"type": "string", "name":
+    "canal_venda", "required": true}, {"type": "double", "name": "alteracoes_apolice_90d",
+    "required": true}, {"type": "string", "name": "tipo_sinistro", "required": true},
+    {"type": "double", "name": "hora_sinistro", "required": true}, {"type": "string",
+    "name": "uf", "required": true}, {"type": "string", "name": "boletim_ocorrencia",
+    "required": true}, {"type": "double", "name": "qtd_testemunhas", "required": false},
+    {"type": "string", "name": "houve_vitima", "required": true}, {"type": "string",
+    "name": "oficina_credenciada", "required": false}, {"type": "double", "name":
+    "valor_sinistro_num", "required": true}, {"type": "double", "name": "dias_ate_aviso",
+    "required": true}, {"type": "double", "name": "mes_sinistro", "required": true},
+    {"type": "double", "name": "dia_semana_sinistro", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-04 18:37:49.785134'
